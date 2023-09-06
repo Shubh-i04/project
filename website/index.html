@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Gym</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playball&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /*CSS reset*/
+    body {
+      font-family: "Playball", cursive;
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      background: url("img/bg.jpg");
+      /*height: 4544px;*/
+    }
+    .left {
+      position: absolute;
+      left: 60px;
+      top: 20px;
+      display: inline-block;
+      /*border: 2px solid red;*/
+    }
+    .left img {
+      width: 90px;
+      
+    }
+    .left div{
+        line-height: 19px;
+        font-size: 20px;
+        text-align:justify;
+    }
+    .mid {
+      display: block;
+      width: 40%;
+      margin: 20px auto;
+      /*border: 2px solid green;*/
+    }
+    .right {
+      position: absolute;
+      right: 34px;
+      top: 20px;
+      display: inline-block;
+      /*border: 2px solid yellow;*/
+    }
+
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+      font-size: 25px;
+    }
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 34px 21px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: black;
+    }
+    .btn {
+      font-family: "Playball", cursive;
+      margin: 0px 9px;
+      background-color: gray;
+      color: white;
+      padding: 4px 14px;
+      border: 2px solid blanchedalmond;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: rgb(32, 30, 30);
+    }
+    .container {
+      float :right;
+      border: 2px solid white;
+      margin: 78px ;
+      padding: 45px 45px;
+      width: 25%;
+      border-radius: 13px;
+    }
+    .form_group input {
+      text-align: center;
+      display: block;
+      width: 274px;
+      padding: 1px;
+      border: 2px solid black;
+      margin: 11px auto;
+      font-size: 23px;
+      border-radius: 8px;
+      font-family: "Playball", cursive;
+    }
+    .container h1 {
+      text-align: center;
+      color: black;
+    }
+    .container button {
+      display: block;
+      width: 57%;
+      margin: 20px auto;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <!-- left box for logo-->
+      <div class="left">
+        <img src="img/logo.png" alt="" />
+        <div> Shubhangi Fitness</div>
+      </div>
+      <!--mid box for navabr-->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Fitness details</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!--right box for bottons-->
+      <div class="right">
+        <button class="btn">Call US</button
+        ><button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join the best gym of Dehradun now</h1>
+      <form action="noaction.php">
+        <div class="form_group">
+          <input type="text" name="" placeholder="enter your name" />
+        </div>
+        <div class="form_group">
+          <input type="text" name="" placeholder="enter your age" />
+        </div>
+        <div class="form_group">
+          <input type="text" name="" placeholder="enter your gender" />
+        </div>
+        <div class="form_group">
+          <input type="text" name="" placeholder="enter your contact no." />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
